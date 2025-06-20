@@ -94,7 +94,7 @@ streamlit run app/app.py
 
 ## 🌐 Live Demo
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-streamlit-cloud-link-here)
+[![Open in Streamlit](https://resume-parser-job-matcher-ml-nlp.streamlit.app/)
 
 ---
 
