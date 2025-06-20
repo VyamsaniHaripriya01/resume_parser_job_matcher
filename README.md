@@ -1,5 +1,11 @@
 # 📄 Resume & JD Matcher with BERT
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://resume-parser-job-matcher-ml-nlp.streamlit.app/)
+![GitHub last commit](https://img.shields.io/github/last-commit/VyamsaniHaripriya01/resume_parser_job_matcher)
+![Repo Size](https://img.shields.io/github/repo-size/VyamsaniHaripriya01/resume_parser_job_matcher)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+
 A smart NLP-powered Streamlit app to match resumes with job descriptions using semantic similarity.
 
 ## 🚀 Features
@@ -101,3 +107,10 @@ streamlit run app/app.py
 ## 📄 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## 🙋‍♀️ Author
+
+Vyamsani T V A Haripriya  
+Data Analyst | Python & ML Enthusiast
