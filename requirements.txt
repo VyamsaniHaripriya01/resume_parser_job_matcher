@@ -3,6 +3,3 @@ python-docx
 pandas
 scikit-learn
 sentence-transformers
-pymupdf
-re
-nltk
