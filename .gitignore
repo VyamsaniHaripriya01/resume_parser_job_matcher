@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Streamlit temporary files
+*.pydeco
+.streamlit/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Microsoft Word temp files
+~$*
+
+# IDE/Editor folders
+.vscode/
+.idea/
+
+# Data files
+*.docx
+*.pdf
+*.csv
+*.xlsx
+data/
