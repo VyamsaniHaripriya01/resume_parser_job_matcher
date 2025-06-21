@@ -3,7 +3,7 @@
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://resume-parser-job-matcher-ml-nlp.streamlit.app/)
 ![GitHub last commit](https://img.shields.io/github/last-commit/VyamsaniHaripriya01/resume_parser_job_matcher)
 ![Repo Size](https://img.shields.io/github/repo-size/VyamsaniHaripriya01/resume_parser_job_matcher)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: Personal & Educational Use Only](https://img.shields.io/badge/license-Personal%20%26%20Educational%20Use-orange)
 
 
 A smart NLP-powered Streamlit app to match resumes with job descriptions using semantic similarity.
@@ -104,9 +104,14 @@ streamlit run app/app.py
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under a custom license for **personal and educational use only**.
+
+- ✅ You may use, modify, and share this code for learning and personal projects.
+- ❌ Commercial use, resale, or offering this code as part of a paid product/service is **not allowed** without the author's permission.
+
+To request commercial use rights, contact: hpriyavtva2001@gmail.com
 
 ---
 
