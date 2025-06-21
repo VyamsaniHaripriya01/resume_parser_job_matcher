@@ -4,16 +4,24 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/VyamsaniHaripriya01/resume_parser_job_matcher)
 ![Repo Size](https://img.shields.io/github/repo-size/VyamsaniHaripriya01/resume_parser_job_matcher)
 ![License: Personal & Educational Use Only](https://img.shields.io/badge/license-Personal%20%26%20Educational%20Use-orange)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
+---
 
-A smart NLP-powered Streamlit app to match resumes with job descriptions using semantic similarity.
+A smart NLP-powered Streamlit app to match resumes with job descriptions , compares them using BERT-based semantic similarity, extracts key skills, and generates a match score. Supports both `.docx` and `.pdf` formats.
+
+---
 
 ## 🚀 Features
-- Upload Resume (.docx) & JD (.docx)
-- Extract candidate info (Name, Email, Phone, Experience)
-- Compute semantic match score using BERT embeddings
-- Extract important JD keywords and check if they’re present in the resume
-- Download results as a CSV
+
+- 📎 Upload Resume & JD in **.docx** or **.pdf** format
+- 🔍 Extract candidate info (name, email, phone, experience)
+- 🤖 Compute **semantic similarity** between resume & JD using BERT
+- 🎯 Highlight matched **keywords**
+- 📥 Downloadable result as **CSV**
+- ❌ Built-in **error handling** for unreadable PDFs
+
+---
 
 ## 📸 Demo Screenshot
 
@@ -23,11 +31,13 @@ A smart NLP-powered Streamlit app to match resumes with job descriptions using s
 
 ## 🧠 How It Works
 
-1. Extracts text using `python-docx`
-2. Cleans and processes text
-3. Uses Sentence-BERT (`all-MiniLM-L6-v2`) to compute similarity
-4. Uses TF-IDF to extract JD keywords
-5. Displays info via Streamlit app UI
+1. Extracts text from `.docx` using `python-docx` and from `.pdf` using `pdfplumber`
+2. Cleans and processes the text using custom preprocessing logic
+3. Uses Sentence-BERT (`all-MiniLM-L6-v2`) to compute semantic similarity
+4. Uses TF-IDF to extract the top keywords from the job description
+5. Matches and highlights overlapping skills between the resume and JD
+6. Displays results in a user-friendly Streamlit web app
+7. Handles unreadable or image-based PDFs gracefully with error messages
 
 ---
 
@@ -55,9 +65,12 @@ resume_parser_job_matcher/
 
 ## 🧪 Sample Use
 
-- Upload `resume_ml.docx` and `jd_ml_engineer.docx`
-- See candidate info, similarity score, and matched keywords
-- Click **Download CSV** for your result
+- Upload `resume_sample.pdf` or `resume_ml.docx` along with a matching `jd_sample.pdf` or `jd_ml_engineer.docx`
+- The app will extract and display:
+  - Candidate name, email, phone, and experience summary
+  - Semantic similarity match score
+  - Highlighted keywords from the job description that match the resume
+- Download the result as a clean CSV report
 
 ---
 
@@ -69,33 +82,36 @@ resume_parser_job_matcher/
 - scikit-learn (TF-IDF, cosine)
 - python-docx
 - pandas
+- pdfplumber
 
 ---
 
 ## 📦 Setup Instructions
 
 1. Clone this repo
+
+```bash
+git clone https://github.com/your-username/resume_parser_job_matcher.git
+cd resume_parser_job_matcher
+```
+
 2. Create virtual environment and install requirements:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## 🙌 Acknowledgements
-
-- [Sentence Transformers](https://www.sbert.net/)
-- [Streamlit](https://streamlit.io/)
-- [scikit-learn](https://scikit-learn.org/)
-
----
-
-## Run the app
+3. Run the app
 
 ```bash
 streamlit run app/app.py
 ```
+
 ---
 
 ## 🌐 Live Demo
@@ -118,4 +134,4 @@ To request commercial use rights, contact: hpriyavtva2001@gmail.com
 ## 🙋‍♀️ Author
 
 Vyamsani T V A Haripriya  
-Data Analyst | Python & ML Enthusiast
+Data Analyst | ML & AI Enthusiast

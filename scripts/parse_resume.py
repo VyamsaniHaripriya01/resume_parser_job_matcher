@@ -1,13 +1,16 @@
-import fitz  # PyMuPDF
 import docx
 import re
 
-def extract_text_from_pdf(path):
-    """Extract text from a PDF resume"""
+def extract_text_from_pdf(file_path):
+    import pdfplumber
     text = ""
-    with fitz.open(path) as doc:
-        for page in doc:
-            text += page.get_text()
+    with pdfplumber.open(file_path) as pdf:
+        for page in pdf.pages:
+            page_text = page.extract_text()
+            if page_text:
+                text += page_text
+    if not text.strip():
+        raise ValueError("No readable text extracted from the PDF. It might be scanned or image-based.")
     return text
 
 def extract_text_from_docx(path):
